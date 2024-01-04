@@ -5,7 +5,7 @@ import styled from "styled-components"
 import CardLayout from "../../src/components/CardLayout"
 import { isoToTimeStamp } from "../../src/utils/convertDate"
 
-const CoverLayout = ({ date, time, place, hall_name, thumbNail }) => {
+const CoverLayout = ({ date, time, place, hallName, thumbNail }) => {
   return (
     <CardLayout>
       <AutoHeightImageWrapper>
@@ -17,7 +17,7 @@ const CoverLayout = ({ date, time, place, hall_name, thumbNail }) => {
             <div>{isoToTimeStamp(date)}</div>
             <div>{time}</div>
             <div>{place}</div>
-            <div>{hall_name}</div>
+            <div>{hallName}</div>
           </LeftSentence>
           <RightBox>
             <div id='head'>우리, 결혼해요</div>

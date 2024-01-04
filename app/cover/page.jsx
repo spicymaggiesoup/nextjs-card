@@ -1,16 +1,13 @@
 import React from "react";
 import CoverLayout from "./layout";
+
 import Hug from "../../public/193659185_05.jpg";
 
 function Cover() {
-  
+  const coverData = require('/public/data/cover.json');
   return (
-    
       <CoverLayout 
-        date="2024/06/15"
-        time="오후 2시"
-        place="명동성당"
-        hallName="파미에채플"
+        {...coverData}
         thumbNail={Hug}
       />
     
