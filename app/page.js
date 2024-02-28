@@ -14,11 +14,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Cover />
       <Introduce />
-      <Timer />
       <Contact />
+      <Timer />
+      <Gallery />
+      
       <Account />
       <Location />
-      <Gallery />
+      
       <Video />
       <Comment />
     </main>

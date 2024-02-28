@@ -1,11 +1,12 @@
 import React from "react";
+import LocationLayout from "./layout";
 
 function Location() {
   const locationData = require('/public/data/location.json');
   return (
-    <div className="w-full mt-10">
-      Location
-    </div>
+    <LocationLayout 
+      {...locationData}
+    />
   );
 }
 

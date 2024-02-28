@@ -12,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+      <script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=6af72bb162b060fec44d4603ee93c1c0"></script>
+      </head>
+      {/* <body className={inter.className}> */}
+      <body>
         {children}
         <Footer />
       </body>

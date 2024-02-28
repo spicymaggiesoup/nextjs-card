@@ -1,3 +1,18 @@
 {
-
+    "banks": {
+        "Kb": "국민은행",
+        "Ibk": "기업은행",
+        "Kakaopay": "카카오뱅크",
+        "Woori": "우리은행"
+    },
+    "brideDad": "이병현",
+    "brideDad_Account": {},
+    "groomDad": "김동욱",
+    "groomDad_Account": {},
+    "brideName": "이소연",
+    "bride_Account": {"Woori": "1002-853-257505"},
+    "brid_Account_link": {"Kakaopay": "https://qr.kakaopay.com/Ej70xqjTz"},
+    "groomName": "김도현",
+    "groom_Account": {"Kb": "209701-04-230540"},
+    "groom_Account_link": {"Kakaopay": "https://qr.kakaopay.com/Ej8HAaZ5e"}
 }

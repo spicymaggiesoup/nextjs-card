@@ -28,9 +28,9 @@ const TimerLayout = ({ date, time, brideName, groomName, thumbNail }) => {
       </AutoHeightImageWrapper>
       <InfoWrapper>
         <InfoBox>Information</InfoBox>
+        <LeftBox>일시</LeftBox>
         <ContentBox>
-          <LeftBox>일시</LeftBox>
-          <RightBox>
+          <StyledSection>
             <CalendarContainer>
               <Calendar value={Ddate}
                 calendarType="US"
@@ -43,10 +43,11 @@ const TimerLayout = ({ date, time, brideName, groomName, thumbNail }) => {
               />
             </CalendarContainer>
             <>
-            <div>{DATE} {time}</div>
-            <div>{groomName.slice(1)}♥{brideName.slice(1)} 결혼식이 {thayDay}일 남았습니다.</div>
+              <div>{DATE} {time}</div>
+              <div>{groomName.slice(1)} ♥ {brideName.slice(1)} 결혼식이 {thayDay}일 남았습니다.</div>
+              <br />
             </>
-          </RightBox>
+          </StyledSection>
         </ContentBox>
       </InfoWrapper>
     </CardLayout>
@@ -118,6 +119,12 @@ export const CalendarContainer = styled.div`
     background-color: var(--color-coral);
   }
 `
-
+const StyledSection = styled.section`
+  margin : 10px 0;
+  text-align:center;
+  div{
+    padding: 6px 0;
+  }
+`
 const AutoHeightImageWrapper = styled.section`
 `

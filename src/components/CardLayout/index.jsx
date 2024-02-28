@@ -3,8 +3,8 @@ import styled from "styled-components";
 const CardLayout = ({children}) => {
   return(
     <StyledLayout>
-    {children}
-  </StyledLayout>
+      {children}
+    </StyledLayout>
   )
 }
 
