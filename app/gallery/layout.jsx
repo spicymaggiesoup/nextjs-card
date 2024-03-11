@@ -8,11 +8,11 @@ const GalleryLayout = ({thumbnails}) => {
   return (
     <CardLayout>
       <AutoHeightImageWrapper>
-        {thumbnails.map((item, index) => {
+        {/* {thumbnails.map((item, index) => {
           return (
             <Image src={item} key={index} priority={true} width={400} height={400} className="autoImage" alt={'thumbNail'} />
           );
-        })}
+        })} */}
       </AutoHeightImageWrapper>
     </CardLayout>
   );

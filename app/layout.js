@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import Script from 'next/script'
 import './globals.css'
 import Footer from './footer/page'
 
@@ -13,10 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      <Script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=6af72bb162b060fec44d4603ee93c1c0" />
-      </head>
-      {/* <body className={inter.className}> */}
+      <head></head>
       <body>
         {children}
         <Footer />

@@ -4,20 +4,21 @@ import styled from "styled-components"
 import CardLayout from "../../src/components/CardLayout"
 
 const AccountLayout = ({ banks, brideDad, brideDad_Account, groomDad, groomDad_Account, brideName, bride_Account, groomName, groom_Account }) => {
+
+  const bankText = (accounts) => 
+    accounts instanceof Object && `${banks[Object.keys(accounts)[0]]} | ${Object.values(accounts)[0]}`
+  ;
+
   return (
     <CardLayout>
       <StyledSection>
         <div><BoldSpan>신랑측 계좌번호</BoldSpan></div>
         <div>
-          <span>{banks[Object.keys(groomDad_Account)[0]]}</span>
-          <span> | </span>
-          <span>{Object.values(groomDad_Account)[0]}</span>
+          <span>{bankText(groomDad_Account)}</span>
           <span> {groomDad}</span>
         </div>
         <div>
-          <span>{banks[Object.keys(groom_Account)[0]]}</span>
-          <span> | </span>
-          <span>{Object.values(groom_Account)[0]}</span>
+          <span>{bankText(groom_Account)}</span>
           <span> {groomName}</span>
         </div>
       </StyledSection>
@@ -25,15 +26,11 @@ const AccountLayout = ({ banks, brideDad, brideDad_Account, groomDad, groomDad_A
       <StyledSection>
         <div><BoldSpan>신부측 계좌번호</BoldSpan></div>
         <div>
-          <span>{banks[Object.keys(brideDad_Account)[0]]}</span>
-          <span> | </span>
-          <span>{Object.values(brideDad_Account)[0]}</span>
+          <span>{bankText(brideDad_Account)}</span>
           <span> {brideDad}</span>
         </div>
         <div>
-          <span>{banks[Object.keys(bride_Account)[0]]}</span>
-          <span> | </span>
-          <span>{Object.values(bride_Account)[0]}</span>
+          <span>{bankText(bride_Account)}</span>
           <span> {brideName}</span>
         </div>
       </StyledSection>

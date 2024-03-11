@@ -1,1 +1,0 @@
-<script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=6af72bb162b060fec44d4603ee93c1c0"></script>
